@@ -8,4 +8,3 @@ frutas = ['Melão', 'Morango', 'Melancia', 'Mamão', 'Manga']
 for conjunto in combinations(frutas, 2):
     # Percebe-se que ele não repete em outra ordem o que já apareceu antes.
     print(conjunto)
-
