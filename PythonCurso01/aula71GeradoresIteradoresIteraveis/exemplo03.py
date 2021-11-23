@@ -20,4 +20,3 @@ print(sys.getsizeof(lista2))  # Consome 112 bytes
 
 # for v in lista2:
 #     print(v)
-
