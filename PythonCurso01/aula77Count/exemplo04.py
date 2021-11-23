@@ -7,3 +7,4 @@ for valor in contador:
     print(valor)
     if valor <= 0:
         break
+    
