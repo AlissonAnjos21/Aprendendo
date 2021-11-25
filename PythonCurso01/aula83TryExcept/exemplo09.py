@@ -11,9 +11,10 @@ except (KeyError, IndexError) as erro:
 except Exception as erro:
     print('Ocorreu um erro inesperado ', erro)  # (Neste caso não será executado).
 
-# Executará caso o try seja executado com sucesso, ou seja, caso não ocorra nenhum erro.
-else:
-    print('Não ocorreu nenhum erro :D')
-    print(palavra)
+# Executará independentemente se o try foi executado com sucesso ou não.
+finally:
+    print('Executo independentemente de tudo')
+    palavra = 'Vazio'
 
 print('Continuação do código')
+print(palavra)
