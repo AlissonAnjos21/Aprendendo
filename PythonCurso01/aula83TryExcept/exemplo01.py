@@ -4,5 +4,6 @@
 # Algo tão simples é considerado uma má prática.
 try:
     print(ola)
+    
 except:
     print('Erro')
