@@ -1,6 +1,6 @@
 # Utilizando a função map
 
-from dados import produtos, pessoas, lista
+from dados import lista
 
 # A função map usa de uma função para modificar a partir dela um objeto iterável, devolvendo assim um iterador.
 vezes_dois = map(lambda x: x * 2, lista)
