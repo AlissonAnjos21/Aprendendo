@@ -21,4 +21,3 @@ while True:
         print(numero * 2)
     else:
         print('O que foi digitado não é um número!')
-
