@@ -8,6 +8,21 @@ juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado = os.path.jo
 
 arquivo = open(juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado, 'w+')  # Write (escreve) + Leitura
 
+# Poderia enviar tudo com apenas um write
 arquivo.write('Primeira Linha\n')
 arquivo.write('Segunda Linha\n')
 arquivo.write('Terceira Linha\n')
+
+# Retorna o cursor para o topo do arquivo
+arquivo.seek(0, 0)
+print('#################\n') 
+print(arquivo.read())  # Lê o arquivo todo
+print('#################\n')
+
+# Retorna o cursor para o topo do arquivo novamente
+arquivo.seek(0, 0)
+print('*****************\n')
+print(arquivo.readline())  # Lê linha por linha
+print(arquivo.readline())
+print(arquivo.readline())
+print('*****************\n') 
