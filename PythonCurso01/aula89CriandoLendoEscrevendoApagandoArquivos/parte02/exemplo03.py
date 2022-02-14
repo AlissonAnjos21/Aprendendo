@@ -1,8 +1,9 @@
 """
-w   -   Apenas escreve
-w+  -   Escreve e lê
+w   -   Apenas escreve (Reescreve o arquivo do zero a cada execução)
+w+  -   Escreve e lê (Reescreve o arquivo do zero a cada execução)
 r   -   Apenas lê
-a+  -   Lê e escreve
+a   -   Concatena
+a+  -   Concatena e lê
 
 """
 
