@@ -16,4 +16,4 @@ juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado = os.path.jo
 # Forma mais recomendada:
 # Não precisa fechar o arquivo (arquivo.close())
 with open(juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado, 'a+') as arquivo:
-    
+    ...
