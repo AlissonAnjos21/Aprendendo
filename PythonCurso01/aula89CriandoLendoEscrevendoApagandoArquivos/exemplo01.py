@@ -25,4 +25,6 @@ print('*****************\n')
 print(arquivo.readline())  # Lê linha por linha
 print(arquivo.readline())
 print(arquivo.readline())
-print('*****************\n') 
+print('*****************\n')
+
+arquivo.close() # Fecha o arquivo
