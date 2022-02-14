@@ -27,4 +27,17 @@ print(arquivo.readline())
 print(arquivo.readline())
 print('*****************\n')
 
+arquivo.seek(0, 0)
+print('-----------------\n')
+print(arquivo.readlines(), '\n')  # Salva todas as linhas dentro de uma lista
+print('-----------------\n')
+
+arquivo.seek(0, 0)
+# Também é possível usar o for nesta lista
+print('=================\n')
+lista_arquivo = arquivo.readlines()
+for linha in lista_arquivo:
+    print(linha)
+print('=================\n')
+
 arquivo.close() # Fecha o arquivo
