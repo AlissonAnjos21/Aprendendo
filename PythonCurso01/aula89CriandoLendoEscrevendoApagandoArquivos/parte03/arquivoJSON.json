@@ -1,0 +1,14 @@
+{
+ "Usuario01": {
+  "nome": "Jurandir",
+  "idade": 42
+ },
+ "Usuario02": {
+  "nome": "Valdir",
+  "idade": 21
+ },
+ "Usuario03": {
+  "nome": "Osvaldo",
+  "idade": "13"
+ }
+}
