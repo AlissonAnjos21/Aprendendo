@@ -16,4 +16,6 @@ juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado = os.path.jo
 # Forma mais recomendada:
 # Não precisa fechar o arquivo (arquivo.close())
 with open(juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado, 'a+') as arquivo:
-    ...
+    arquivo.write('Concatenando uma linha\n')  # A cada execução deste código, ele irá escrever esta linha mais uma vez
+    arquivo.seek(0, 0)
+    print(arquivo.read())
