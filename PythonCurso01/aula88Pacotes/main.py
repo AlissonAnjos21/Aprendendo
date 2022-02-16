@@ -1,3 +1,5 @@
+# Todas as importações tem que levar em conta o ponto de vista do arquivo main, pois é a partir dele que o programa será executado já que não é possível importar um pacote que esteja para "trás", ou seja, que esteja fora da pasta a ser executada
+
 import pacoteValores.calcula_valor
 import pacoteValores.pacoteConversao.converte
 
