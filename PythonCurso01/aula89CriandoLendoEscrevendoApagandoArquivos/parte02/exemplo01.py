@@ -8,7 +8,7 @@ juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado = os.path.jo
 # (É possível, mas não recomendado)
 
 try:
-    arquivo = open(juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado, 'w+')  # Write (escreve) + Leitura
+    arquivo = open(juntando_os_caminhos_do_diretorio_e_nome_do_arquivo_que_sera_criado, 'w+')  # Write (Escreve) | + (Leitura)
     arquivo.write('Olá amigo, você é um amigo\n')
     arquivo.write('Folha de mostarda!\n')
     arquivo.write('Salmão...\n')
