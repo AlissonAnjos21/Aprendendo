@@ -1,1 +1,0 @@
-# Funções decoradoras e decoradores
