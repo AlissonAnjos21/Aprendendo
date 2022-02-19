@@ -15,5 +15,3 @@ def qualquer_funcao():
 qualquer_funcao = chefe(qualquer_funcao)  # Estou decorando a função "qualquer_funcao" com a função "chefe", ou seja, antes de executar a "qualquer_funcao", ela sempre passará dentro da função "chefe" antes
 
 qualquer_funcao()  # Executando fica nítido que ela passou dentro da "chefe" porque ela executou o print que existe em "empregado"
-
-
