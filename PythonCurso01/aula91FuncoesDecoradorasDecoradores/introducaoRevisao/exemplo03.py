@@ -8,7 +8,7 @@ def chefe():
 variavel_executadora = chefe()  # Funciona perfeitamente (não esquecer de colocar os parênteses)
 
 """
-Explicação do porquê ao se atribuir uma função pura à uma variável não se usa os parênteses e em uma função que executa uma função e retorna ela se deve usar:
+Explicação do porquê ao se atribuir uma função pura à uma variável não se usa os parênteses e em uma função que, executa uma função e retorna ela, se deve usar:
 
 Para ficar menos confuso chamarei função que executa uma função e retorna de alfa
 

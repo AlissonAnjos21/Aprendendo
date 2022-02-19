@@ -1,7 +1,7 @@
 # Função dentro de função:
 
-def chefe():
-    def empregado():
+def chefe_01():
+    def empregado_01():
         print('Sorriam e acenem rapazes, sorriam e acenem :D')
     
 
@@ -11,5 +11,5 @@ def chefe_02():
     empregado_02()
 
 
-chefe()  # Não acontece 
-chefe_02()  # Executa perfeitamente o empregado_02
+chefe_01()  # Não acontece 
+chefe_02()  # Executa perfeitamente a empregado_02
