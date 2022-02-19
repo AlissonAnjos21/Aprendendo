@@ -9,6 +9,7 @@ def soma_sem_args(num1, num2):
 # Com args:
 def soma_com_args(*args):
     resultado = 0
+    # Esse args é uma tupla que foi gerada
     for valor in args:
         resultado += valor
     return resultado
