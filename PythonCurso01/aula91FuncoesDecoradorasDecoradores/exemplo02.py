@@ -12,4 +12,6 @@ def chefe(funcao):
 def qualquer_funcao():
     print('Sou uma função qualquer')
 
+
+# Chamando a função:
 qualquer_funcao()
