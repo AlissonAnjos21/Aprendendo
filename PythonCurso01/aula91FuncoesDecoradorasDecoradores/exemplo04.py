@@ -1,4 +1,4 @@
-# Executando como um retorno a função a ser decorada
+# Executando a função decorada como um retorno 
 
 def chefe(funcao):
     def empregado(*args, **kwargs):
