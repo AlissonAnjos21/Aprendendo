@@ -5,7 +5,7 @@ def chefe(funcao):
     def empregado():
         funcao()
         print('Continuo trabalhando muito bem')
-    return empregado()
+    return empregado
 
 # Decorador:
 @chefe  # Isso é equivalente a: qualquer_funcao = chefe(qualquer_funcao)
