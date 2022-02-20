@@ -1,5 +1,5 @@
 # Importa do módulo apenas as funções desejadas
-from funcoes import  seleciona_par, seleciona_impar, dobro, metade
+from funcoes import seleciona_par, seleciona_impar, dobro, metade
 
 lista = [1, 2, 3, 4, 5]
 
