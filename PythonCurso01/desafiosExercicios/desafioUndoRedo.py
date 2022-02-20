@@ -9,20 +9,50 @@ Faça uma lista de tarefas com as seguintes opções:
 
 from time import sleep
 
+def acao():
+    valor = input('\nO quê você gostaria de fazer?\nDigite:\n1 - Para Adicionar Uma Tarefa\n2 - Para Listar as Tarefas\n3 - Para Desfazer a Última Ação\n4 - Para Refazer Uma Ação Desfeita\n\n')
+
+    if valor.isnumeric():
+        valor = int(valor)
+        if valor not in [1, 2, 3, 4]:
+            valor = 'default'
+    else:
+        valor = 'default'
+    return valor
+
+
+def adiciona(item):
+    tarefas.append(item)
+
+
+def listar(tarefas):
+    print('\nEssas são todas as tarefas: ')
+    for tarefa in tarefas:
+        print(tarefa)
+        sleep(0.5)
+
+
 tarefas = []
 while True:
-    
-    opcao = input('\nO quê você gostaria de fazer?\nDigite:\n1 - Para Adicionar Uma Tarefa\n2 - Para Listar as Tarefas\n3 - Para Desfazer a Última Ação\n4 - Para Refazer Uma Ação Desfeita\n\n')
 
-    if opcao == '1':
-        tarefas.append(input('\nInforme uma tarefa: \n'))
+    opcao = acao()
+        
+    if opcao == 1:
+        item = input('\nInforme uma tarefa: \n')
+        adiciona(item)
 
-    if opcao == '2' and tarefas == []:
+    if opcao == 2 and tarefas == []:
         print('\nA lista de tarefas está vazia, tente adicionar uma tarefa primeiro.')
-    elif opcao == '2' and tarefas != []:
-        print('\nEssas são todas as tarefas: ')
-        for tarefa in tarefas:
-            print(tarefa)
-            sleep(0.5)
+    elif opcao == 2 and tarefas != []:
+        listar(tarefas)
 
+
+
+
+
+
+
+    if opcao == 'default':
+        print('\nO valor digitado não corresponde as opções!')
+        
     sleep(1.5)
