@@ -5,7 +5,5 @@ Faça uma lista de tarefas com as seguintes opções:
     opção de desfazer (a cada vez que chamarmos, desfaz a última ação)
     opção de refazer (a cada vez que chamarmos, refaz a última ação)
 
-
-
-    
 """
+
