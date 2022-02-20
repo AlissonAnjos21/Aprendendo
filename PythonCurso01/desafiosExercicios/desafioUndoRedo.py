@@ -11,7 +11,6 @@ from time import sleep
 
 def acao():
     valor = input('\nO quê você gostaria de fazer?\nDigite:\n1 - Para Adicionar Uma Tarefa\n2 - Para Listar as Tarefas\n3 - Para Desfazer a Última Ação\n4 - Para Refazer Uma Ação Desfeita\n\n')
-
     if valor.isnumeric():
         valor = int(valor)
         if valor not in [1, 2, 3, 4]:
@@ -26,10 +25,10 @@ def adiciona(item):
 
 
 def listar(tarefas):
-    print('\nEssas são todas as tarefas: ')
+    print('\nEstas são todas as tarefas: ')
     for tarefa in tarefas:
         print(tarefa)
-        sleep(0.5)
+        sleep(0.25)
 
 
 tarefas = []
@@ -55,4 +54,4 @@ while True:
     if opcao == 'default':
         print('\nO valor digitado não corresponde as opções!')
         
-    sleep(1.5)
+    sleep(0.5)
