@@ -23,14 +23,10 @@ Recap.
 """
 import cnpj
 
+lista_cnpj = []
 while True:
     cnpj_usuario = cnpj.numerificar(input('Informe um CNPJ para ser validado: \n'))
 
-    if len(cnpj_usuario) != 14:
-        print('Este CNPJ não é válido!')
-    else:
-         
-
-
-
+    cnpj.forma_lista(cnpj_usuario, lista_cnpj)
+    
 
