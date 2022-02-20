@@ -25,10 +25,13 @@ def adiciona(item):
 
 
 def listar(tarefas):
-    print('\nEstas são todas as tarefas: ')
-    for tarefa in tarefas:
-        print(tarefa)
-        sleep(0.25)
+    if tarefas == []:
+        print('\nA lista de tarefas está vazia, tente adicionar uma tarefa primeiro.')
+    else:
+        print('\nEstas são todas as tarefas: ')
+        for tarefa in tarefas:
+            print(tarefa)
+            sleep(0.25)
 
 
 tarefas = []
@@ -40,10 +43,10 @@ while True:
         item = input('\nInforme uma tarefa: \n')
         adiciona(item)
 
-    if opcao == 2 and tarefas == []:
-        print('\nA lista de tarefas está vazia, tente adicionar uma tarefa primeiro.')
-    elif opcao == 2 and tarefas != []:
+    if opcao == 2:
         listar(tarefas)
+    
+        
 
 
 
