@@ -7,3 +7,16 @@ Faça uma lista de tarefas com as seguintes opções:
 
 """
 
+
+# tarefas.append(input('Informe uma tarefa: \n'))
+
+# for tarefa in tarefas:
+    #  print(tarefa)
+
+
+tarefas = []
+while True:
+    
+    opcao = input('\nO quê você gostaria de fazer?\nDigite:\n1 - Para Adicionar Uma Tarefa\n2 - Para Listar as Tarefas\n3 - Para Desfazer a Última Ação\n4 - Para Refazer Uma Ação Desfeita\n\n')
+
+    
