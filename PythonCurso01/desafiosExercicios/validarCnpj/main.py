@@ -19,14 +19,60 @@ Válido
 
 Recap.
 543298765432 -> Primeiro digito
-6543298765432 -> Segunro digito
+6543298765432 -> Segundo digito
 """
-import cnpj
 
-lista_cnpj = []
+import re
+
 while True:
-    cnpj_usuario = cnpj.numerificar(input('Informe um CNPJ para ser validado: \n'))
+    cnpj_usuario = input('Informe um CNPJ para ser validado: \n')
+    cnpj_usuario = re.sub(r'[^0-9]', '', cnpj_usuario)
 
-    cnpj.forma_lista(cnpj_usuario, lista_cnpj)
-    
+    parte_1 = (5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2)
+    parte_2 = (6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2)
+    lista_cnpj_usuario = []
 
+    if len(cnpj_usuario) != 14 or cnpj_usuario.isnumeric == False:
+        print('\nEsse não é um CNPJ válido!')
+    else:
+        for v in range(len(cnpj_usuario) - 2):
+            lista_cnpj_usuario.append(int(cnpj_usuario[v]))
+
+
+    lista_soma = []
+    for v in range(len(lista_cnpj_usuario)):
+        lista_soma.append(lista_cnpj_usuario[v] * parte_1[v])
+
+
+    digito = 11 - (sum(lista_soma) % 11)
+
+    if digito > 9:
+        lista_cnpj_usuario.append(0)
+        digito = 0
+    else:
+        lista_cnpj_usuario.append(digito)
+        digito = 0
+
+    lista_soma.clear()
+
+    for v in range(len(lista_cnpj_usuario)):
+        lista_soma.append(lista_cnpj_usuario[v] * parte_2[v])
+
+    digito = 11 - (sum(lista_soma) % 11)
+
+    if digito > 9:
+        lista_cnpj_usuario.append(0)
+        digito = 0
+    else:
+        lista_cnpj_usuario.append(digito)
+        digito = 0
+
+    cnpj_verificado = ''
+    for v in lista_cnpj_usuario:
+        cnpj_verificado += str(v)
+
+    if cnpj_usuario == cnpj_verificado:
+        print('Este CNPJ é válido!!!\n')
+    else:
+        print('Este CNPJ NÃO É válido!!!\n')
+        
