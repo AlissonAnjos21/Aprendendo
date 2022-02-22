@@ -37,4 +37,3 @@ def verificar_cnpj(lista_cnpj_usuario, cnpj_usuario):
     else:
         print('Este CNPJ NÃO É válido!!!\n')
     
-    
