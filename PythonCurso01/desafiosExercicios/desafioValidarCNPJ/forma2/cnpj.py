@@ -33,7 +33,7 @@ def validar_cnpj(lista_cnpj_usuario, cnpj_usuario):
     for v in lista_cnpj_usuario:
         cnpj_validado += str(v)
     if cnpj_usuario == cnpj_validado:
-        print('Este CNPJ é válido!!!\n')
+        print('\nEste CNPJ é válido!!!\n')
     else:
-        print('Este CNPJ NÃO É válido!!!\n')
+        print('\nEste CNPJ NÃO É válido!!!\n')
     
