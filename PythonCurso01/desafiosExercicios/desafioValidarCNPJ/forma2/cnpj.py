@@ -28,11 +28,11 @@ def multiplicar(lista_cnpj_usuario, parte):
     return lista_cnpj_usuario
 
 
-def verificar_cnpj(lista_cnpj_usuario, cnpj_usuario):
-    cnpj_verificado = ''
+def validar_cnpj(lista_cnpj_usuario, cnpj_usuario):
+    cnpj_validado = ''
     for v in lista_cnpj_usuario:
-        cnpj_verificado += str(v)
-    if cnpj_usuario == cnpj_verificado:
+        cnpj_validado += str(v)
+    if cnpj_usuario == cnpj_validado:
         print('Este CNPJ é válido!!!\n')
     else:
         print('Este CNPJ NÃO É válido!!!\n')

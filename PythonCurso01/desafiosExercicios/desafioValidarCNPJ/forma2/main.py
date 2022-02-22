@@ -22,7 +22,7 @@ Recap.
 6543298765432 -> Segundo digito
 """
 
-from cnpj import pegar_cnpj, listar_cnpj, multiplicar, verificar_cnpj
+from cnpj import pegar_cnpj, listar_cnpj, multiplicar, validar_cnpj
 
 while True:
     cnpj_usuario = pegar_cnpj()
@@ -33,10 +33,11 @@ while True:
 
     lista_cnpj_usuario = listar_cnpj(cnpj_usuario, lista_cnpj_usuario)
 
+    # Verifica se a lista está vazia
     if not lista_cnpj_usuario:
         continue
 
     lista_cnpj_usuario = multiplicar(lista_cnpj_usuario, parte_1)
     lista_cnpj_usuario = multiplicar(lista_cnpj_usuario, parte_2)
 
-    verificar_cnpj(lista_cnpj_usuario, cnpj_usuario)
+    validar_cnpj(lista_cnpj_usuario, cnpj_usuario)
