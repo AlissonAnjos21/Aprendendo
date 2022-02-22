@@ -22,10 +22,15 @@ Recap.
 6543298765432 -> Segundo digito
 """
 
-from cnpj import pegar_cnpj, listar_cnpj, multiplicar, validar_cnpj
+from cnpj import pegar_cnpj, ser_cnpj, listar_cnpj, multiplicar, validar_cnpj
 
 while True:
     cnpj_usuario = pegar_cnpj()
+    repeticao = ser_cnpj(cnpj_usuario)
+
+    # Se for repetição, ele irá para o novo loop do while, ou seja, pedirá outro CNPJ
+    if repeticao:
+        continue
 
     lista_cnpj_usuario = []
     parte_1 = (5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2)

@@ -6,6 +6,15 @@ def pegar_cnpj():
     return cnpj_usuario
 
 
+def ser_cnpj(cnpj_usuario):
+    repeticao = cnpj_usuario[0] * len(cnpj_usuario)
+    if cnpj_usuario == repeticao:
+        print('\nEste CNPJ NÃO É válido!!!\n')
+        return True
+    else:
+        return False
+
+
 def listar_cnpj(cnpj_usuario, lista_cnpj_usuario):
     if len(cnpj_usuario) != 14 or cnpj_usuario.isnumeric == False:
         print('\nEste CNPJ NÃO É válido!!!\n')
