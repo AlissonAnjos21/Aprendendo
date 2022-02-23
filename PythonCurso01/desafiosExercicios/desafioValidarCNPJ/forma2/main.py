@@ -26,10 +26,10 @@ from cnpj import pegar_cnpj, ser_cnpj, listar_cnpj, multiplicar, validar_cnpj
 
 while True:
     cnpj_usuario = pegar_cnpj()
-    repeticao = ser_cnpj(cnpj_usuario)
+    invalido = ser_cnpj(cnpj_usuario)
 
-    # Se for repetição, ele irá para o novo loop do while, ou seja, pedirá outro CNPJ
-    if repeticao:
+    # Se for inválido, ele irá para o novo loop do while, ou seja, pedirá outro CNPJ
+    if invalido:
         continue
 
     lista_cnpj_usuario = []
@@ -37,10 +37,6 @@ while True:
     parte_2 = (6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2)
 
     lista_cnpj_usuario = listar_cnpj(cnpj_usuario, lista_cnpj_usuario)
-
-    # Verifica se a lista está vazia
-    if not lista_cnpj_usuario:
-        continue
 
     lista_cnpj_usuario = multiplicar(lista_cnpj_usuario, parte_1)
     lista_cnpj_usuario = multiplicar(lista_cnpj_usuario, parte_2)

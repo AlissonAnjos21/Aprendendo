@@ -7,22 +7,22 @@ def pegar_cnpj():
 
 
 def ser_cnpj(cnpj_usuario):
-    repeticao = cnpj_usuario[0] * len(cnpj_usuario)
-    if cnpj_usuario == repeticao:
-        print('\nEste CNPJ NÃO É válido!!!\n')
+    if cnpj_usuario == '':
+        print('\nIsso NÃO é um CNPJ!!!\n')
         return True
     else:
-        return False
+        repeticao = cnpj_usuario[0] * len(cnpj_usuario)
+        if cnpj_usuario == repeticao or len(cnpj_usuario) != 14:
+            print('\nIsso NÃO é um CNPJ!!!\n')
+            return True
+        else:
+            return False
 
 
 def listar_cnpj(cnpj_usuario, lista_cnpj_usuario):
-    if len(cnpj_usuario) != 14 or cnpj_usuario.isnumeric == False:
-        print('\nEste CNPJ NÃO É válido!!!\n')
-        return
-    else:
-        for v in range(len(cnpj_usuario) - 2):
-            lista_cnpj_usuario.append(int(cnpj_usuario[v]))
-        return lista_cnpj_usuario
+    for v in range(len(cnpj_usuario) - 2):
+        lista_cnpj_usuario.append(int(cnpj_usuario[v]))
+    return lista_cnpj_usuario
 
 
 def multiplicar(lista_cnpj_usuario, parte):
