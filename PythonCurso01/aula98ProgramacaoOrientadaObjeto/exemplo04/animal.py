@@ -24,4 +24,24 @@ class Animal:
         self.alimentar = False
 
 
+    def dormir(self, turno):
+        if self.alimentar:
+            print(f'O animal {self.nome} não pode dormir se alimentando.')
+            return
         
+        if self.dormindo:
+            print(f'O animal {self.nome} já está dormindo')
+            return
+
+        print(f'O animal {self.nome} começou a dormir')
+        self.dormindo = True
+
+
+    def parar_dormir(self):
+        if not self.dormindo:
+            print(f'O animal {self.nome} não está dormindo')
+            return
+
+        print(f'O animal {self.nome} parou de dormir.')
+        self.dormindo = False
+
