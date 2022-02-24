@@ -19,6 +19,7 @@ class Animal:
         if not self.alimentar:
             print(f'O animal {self.nome} não está se alimentando.')
             return
+            
         print(f'O animal {self.nome} parou de se alimentar')
         self.alimentar = False
 
