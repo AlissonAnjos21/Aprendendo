@@ -5,5 +5,6 @@ class Animal:
         self.dormindo = dormindo
         self.comendo = comendo
 
-        
-        
+    def comer(self, comida):
+        print(f'O animal {self.nome} está comento {comida}.')
+        self.comendo = True
