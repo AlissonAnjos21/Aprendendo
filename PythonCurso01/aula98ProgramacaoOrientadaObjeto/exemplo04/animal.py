@@ -33,7 +33,7 @@ class Animal:
             print(f'O animal {self.nome} já está dormindo')
             return
 
-        print(f'O animal {self.nome} começou a dormir')
+        print(f'O animal {self.nome} começou a dormir no turno {turno}')
         self.dormindo = True
 
 

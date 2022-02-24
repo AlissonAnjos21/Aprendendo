@@ -10,3 +10,13 @@ a1.parar_se_alimentar()
 a1.parar_se_alimentar()  # Não está se alimentando
 
 a1.se_alimentar('Folha de Árvore')  # Agora consegue se alimentar de Folha de Árvore
+
+print()
+print()
+print()
+
+a2.dormir('Matutino')
+a2.dormir('Matutino')
+a2.parar_dormir()
+a2.parar_dormir()
+a2.dormir('Vespertino')
