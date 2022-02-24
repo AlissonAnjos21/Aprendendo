@@ -10,7 +10,10 @@ class Animal:
         if self.alimentar:
             print(f'O animal {self.nome} já está se alimentando.')
             return
-            
+        if self.dormindo:
+            print(f'O animal {self.nome} não pode se alimentar dormindo')
+            return
+
         print(f'O animal {self.nome} está se alimentando de {comida}.')
         self.alimentar = True
 

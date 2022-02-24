@@ -16,6 +16,7 @@ print()
 print()
 
 a2.dormir('Matutino')
+a2.se_alimentar('Salmão')
 a2.dormir('Matutino')
 a2.parar_dormir()
 a2.parar_dormir()
