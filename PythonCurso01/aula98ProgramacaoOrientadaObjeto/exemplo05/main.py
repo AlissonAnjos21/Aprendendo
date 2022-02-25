@@ -1,3 +1,5 @@
+# Variáveis de Classe
+
 from animal import Animal
 
 a1 = Animal('Vaca', 1)  # a1.nome = 'Vaca', a1.idade = 1
