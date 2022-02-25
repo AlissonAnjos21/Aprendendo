@@ -13,6 +13,6 @@ class Comida:
     @staticmethod
     def criar_registro():
         # Como ele funciona de forma semelhante a uma função fora da classe, não é possível usar "self" nem "cls" dentro deste método
-        rand = randint(10000, 99999)
+        rand = randint(10000, 99999)  # Gera números aleatórios de 5 digitos
         return rand
         
