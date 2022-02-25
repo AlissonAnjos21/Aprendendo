@@ -20,3 +20,5 @@ class Casa:
         # Perceba que "tempo_uso" neste caso é apenas uma variável local deste escopo
         tempo_uso = cls.ano_atual - ano_entrada
         return cls(numero, tempo_uso)
+
+        
