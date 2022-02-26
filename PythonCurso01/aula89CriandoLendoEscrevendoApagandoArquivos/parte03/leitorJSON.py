@@ -2,9 +2,9 @@ import json
 import os
 diretorio_geral = os.path.dirname(__file__)
 diretorio_local = 'arquivoJSON.json'
-criacao_arquivo = os.path.join(diretorio_geral, diretorio_local)
+ler_arquivo = os.path.join(diretorio_geral, diretorio_local)
 
-with open(criacao_arquivo, 'r') as arquivo:
+with open(ler_arquivo, 'r') as arquivo:
     captura_json = arquivo.read()
     print(captura_json)  # Ainda está em formato JSON
 
