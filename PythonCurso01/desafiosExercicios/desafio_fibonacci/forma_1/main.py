@@ -8,4 +8,3 @@ for i in range(maximo):
     if i >= 2:
         lista.append(lista[i] + lista[i-1])
     print(lista[i])
-
