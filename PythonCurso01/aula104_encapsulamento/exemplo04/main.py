@@ -32,8 +32,10 @@ c1.inserir_carro(1, 'Corsa')
 c1.inserir_carro(2, 'Mustang')
 c1.inserir_carro(3, 'Camaro')
 
+c1.__lista_carros = "NÃOOOOOO, EU NÃO CONSIGO MAIS QUEBRAR A CLASSE 😭😭😭"  # Não faz literalmente NADA no código 😎, pois o atributo está fortemente privado
+
 # O código abaixo exibe um erro, não é possível acessá-lo desta forma
 # print(c1.__lista_carros)
 
 # Para acessá-lo é necessário fazer da seguinte forma:
-print(c1._Carro__lista_carros)  # Lembrando que NÃO É PARA ACESSÁ-LO FORA DA CLASSE
+print(c1._Carro__lista_carros)  # Lembrando que NÃO É PARA ACESSÁ-LO DE FORA DA CLASSE
