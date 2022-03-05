@@ -27,5 +27,6 @@ c1.inserir_carro(3, 'Camaro')
 c1.lista_carros = "Vou quebrar essa classe toda 🤡"
 
 # A classe foi quebrada pois a "lista_carros" não é mais um dicionário
+# Logo, tudo abaixo não funcionará
 c1.remover_carro(1)
 c1.mostrar_carros()
