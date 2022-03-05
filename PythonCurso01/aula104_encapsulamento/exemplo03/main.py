@@ -37,3 +37,5 @@ c1.inserir_carro(3, 'Camaro')
 # Mas mesmo que a lista de carros esteja "privada" ainda é possível acessá-la de fora da classe (embora não se deva fazer isso)
 # Desta maneira:
 c1._lista_carros = 'Quebrei a classe novamente 😜🤡'
+
+print(c1._lista_carros)
