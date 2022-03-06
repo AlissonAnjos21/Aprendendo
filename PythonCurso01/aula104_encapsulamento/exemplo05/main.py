@@ -37,6 +37,6 @@ c1.__lista_carros = "NÃOOOOOO, EU NÃO CONSIGO MAIS QUEBRAR A CLASSE 😭😭�
 # Imprime este novo atributo criado (lembrando que ele não influencia o outro em nada):
 print(c1.__lista_carros)
 
-# Como ele não influencia no outro atributo, é possível usar normalmente as funções da classe
+# Como ele não influencia no outro atributo, é possível usar normalmente a classe
 c1.remover_carro(3)
 c1.mostrar_carros()
