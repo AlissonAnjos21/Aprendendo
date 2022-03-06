@@ -33,7 +33,7 @@ class Carro:
     
 
     def mostrar_carros(self):
-        for id, nome in self.lista_carros.items():
+        for id, nome in self.lista_carros['carros'].items():
             print(id, nome)
 
 

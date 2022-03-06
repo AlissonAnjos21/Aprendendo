@@ -24,7 +24,7 @@ class Carro:
     
 
     def mostrar_carros(self):
-        for id, nome in self._lista_carros.items():
+        for id, nome in self._lista_carros['carros'].items():
             print(id, nome)
 
 
