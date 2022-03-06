@@ -1,5 +1,5 @@
 """
-A agregação é um subconjunto da associação
+A agregação é em parte parecida com a associação
 
 Neste caso, a agregação é quando é possível que duas classes existam individualmente, porém uma das classes só irá funcionar plenamente caso use-se de outra classe. Ao passo que, a segunda classe poderá existir de forma plena sem a outra
 
