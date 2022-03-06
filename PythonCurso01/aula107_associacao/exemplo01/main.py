@@ -18,5 +18,6 @@ trator.arar()  # O trator está arando o solo...
 # Consigo definir a ferramenta do agricultor como sendo uma instância de outra classe
 agricultor.ferramenta = enxada
 
+# Consigo usar os argumentos e métodos da classe que foi informada como o argumento de outra classe
 print(agricultor.ferramenta.tipo)  # Enxada rotatória
 agricultor.ferramenta.arar()  # A enxada está arando o solo...
