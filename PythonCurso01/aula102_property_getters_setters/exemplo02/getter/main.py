@@ -7,6 +7,8 @@ O getter é uma função que retorna o valor de algo
 
 O @property indica que um método será tratado como um atributo
 
+Nunca chamar o método dentro do método, embora o método fora dele seja tratado como um atributo, ao chamá-lo dentro dele mesmo gerará uma recursão
+
 """
 
 # Reforço getter:
