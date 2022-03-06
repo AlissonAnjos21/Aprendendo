@@ -1,5 +1,7 @@
 # Reforço setter:
 
+# Obs: Chamo o _categoria de atributo fantasma pois o mesmo não é inicializado no método __init__, então o mesmo se torna oculto, porém ele é na verdade um atributo "privado"
+
 class Comida:
     def __init__(self, categoria=None):
         # Agora ele está chamando o atributo setter categoria e passando para ele o valor da inicialização
