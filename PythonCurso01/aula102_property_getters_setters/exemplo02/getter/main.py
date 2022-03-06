@@ -9,6 +9,7 @@ O @property indica que um método será tratado como um atributo
 
 """
 
+# Reforço getter:
 class Comida1:
     def categoria(self):
         return 'Salgado'
