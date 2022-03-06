@@ -10,7 +10,7 @@ class Comida:
 
     @property
     def categoria(self):
-        # Estou retornando o valor do "atributo fantasma (privado)" _categoria, logo, o valor do método getter que se comporta como atributo (categoria) se torna este
+        # Estou retornando o valor do "atributo fantasma (privado)" _categoria, logo, o valor do método getter categoria (que se comporta como atributo) se torna o mesmo do _categoria
         return self._categoria
 
 
