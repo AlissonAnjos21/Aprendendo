@@ -13,14 +13,14 @@ class Pessoa:
 class Professor(Pessoa):
     def ensinar(self):
         # Consigo usar os atributos e métodos de Pessoa
-        print(f'{self.nome_classe} Está ensinando...')
+        print(f'{self.nome_classe} Está Ensinando...')
 
 
 # Estou estendendo a classe Estudante para que ela herde tudo que existe na classe Pessoa
 class Estudante(Pessoa):
     def estudar(self):
         # Consigo usar os atributos e métodos de Pessoa
-        print(f'{self.nome_classe} Está estudando...')
+        print(f'{self.nome_classe} Está Estudando...')
 
 
 professor = Professor('Joilson', 27)
