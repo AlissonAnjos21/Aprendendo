@@ -8,7 +8,7 @@ cp.depositar(20)
 
 print('-------------------------------------------------------------------------------------')
 
-cc = ContaCorrente('Alice', 5678, 2100)
+cc = ContaCorrente('Alice', 5678, 2100)  # Limite de 210 por padrão
 cc.retirar(2121)  # Saldo da Conta: -21
 cc.depositar(210)  # Saldo da Conta: 189
 cc.retirar(189)  # Saldo da Conta: 0
