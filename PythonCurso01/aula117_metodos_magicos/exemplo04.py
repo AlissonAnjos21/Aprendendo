@@ -12,4 +12,3 @@ class Exemplo:
 
 exemplo = Exemplo()
 exemplo.sou_metodo()  # Sou um método de classe :D
-    
