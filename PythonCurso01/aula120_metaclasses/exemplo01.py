@@ -36,14 +36,14 @@ class Filha01(Pai):
     variavel = 'Sou uma variável'
     def metodo(self):
         print('Sou um método')
-    # Feedback: "Você precisa criar o metodo_necessário na classe Filha01"
+    # Feedback: 'Você precisa criar o "metodo_necessário" na classe Filha01'
 
 class Filha02(Pai):
     variavel = 'Sou uma variável'
     def metodo(self):
         print('Sou um método')
     metodo_necessario = 'Hehe, vou enganar o código'  # Spoiler: não vai ;D
-    # Feedback: "O metodo_necessario precisa ser um método, não podendo ser um atributo da classe Filha02"
+    # Feedback: 'O "metodo_necessario" precisa ser um método, não podendo ser um atributo da classe Filha02'
 
 class Filha03(Pai):
     variavel = 'Sou uma variável'
