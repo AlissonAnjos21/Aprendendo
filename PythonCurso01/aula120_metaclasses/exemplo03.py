@@ -17,4 +17,4 @@ ClassePai = type(
 
 classe = ClassePai()
 print(type(classe))  # <class '__main__.ClassePai'>
-classe.respirar()
+classe.respirar()  # 'Olá, estou respirando!'
