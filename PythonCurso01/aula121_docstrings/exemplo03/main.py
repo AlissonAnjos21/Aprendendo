@@ -1,0 +1,3 @@
+import funcoes
+
+help(funcoes)
