@@ -23,5 +23,3 @@ class Cliente(Pessoa):
     def __init__(self, nome, idade, conta):
         Pessoa.__init__(self, nome, idade)
         self.conta = conta
-
-
