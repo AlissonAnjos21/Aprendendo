@@ -3,6 +3,7 @@ class CalcIpv4:
         self.ip = ip
         self.mascara = mascara
         self.cidr = cidr
+        print(self.ip)
 
     @property
     def ip(self):
@@ -10,21 +11,5 @@ class CalcIpv4:
     
     @ip.setter
     def ip(self, ip):
+        ip = ip.split('.')
         self._ip = ip
-
-    @property
-    def mascara(self):
-        return self._mascara
-
-    @mascara.setter
-    def mascara(self, mascara):
-        self._mascara = mascara
-
-    @property
-    def cidr(self):
-        return self._cidr
-
-    @cidr.setter
-    def cidr(self, cidr):
-        self._cidr = cidr
-    
