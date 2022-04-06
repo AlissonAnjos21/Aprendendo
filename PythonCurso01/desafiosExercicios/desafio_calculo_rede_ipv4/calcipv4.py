@@ -6,32 +6,27 @@ class CalcIpv4:
         self.ip = ip
         self.mask = mask
         self.prefix = prefix
+        self.mask_value = None
         
         self.binary_ip = self.convert_ip_to_binary(self.ip)
-        self.binary_mask = self.generate_binary_mask_from_prefix()
-        self.decimal_mask = self.convert_binary_ip_to_decimal(self.binary_mask)
-        self.binary_broadcast_ip = self.generate_broadcast_ip()
-        self.binary_web_ip = self.generate_web_ip()
-        self.decimal_broadcast_ip = self.convert_binary_ip_to_decimal(self.binary_broadcast_ip)
-        self.decimal_web_ip = self.convert_binary_ip_to_decimal(self.binary_web_ip)
-        self.number_of_ips = self.generate_number_of_ips()
-        self.binary_mask_from_mask = self.convert_ip_to_binary(self.mask)
-        self.prefix = self.generate_prefix_from_binary_mask()
-        # print(self.ip)
-        # print(self.mask)
-        # print(self.binary_ip)
-        # print(self.binary_mask)
-        # print(self.decimal_mask)
-        # print(self.binary_broadcast_ip)
-        # print(self.binary_web_ip)
-        # print(self.decimal_broadcast_ip)
-        # print(self.decimal_web_ip)
-        # print(self.number_of_ips)
-        # print(self.binary_mask_from_mask)
-        # print(self.prefix)
+        if not self.mask and self.prefix:
+            self.binary_mask = self.generate_binary_mask_from_prefix()
+            self.mask_value = self.convert_binary_ip_to_decimal(self.binary_mask)
+        
+        if not self.prefix and self.mask:
+            self.binary_mask_from_mask = self.convert_ip_to_binary(self.mask)
+            self.prefix = self.generate_prefix_from_binary_mask()
+        
+        if not self.mask_value:
+            self.mask_value = self.mask
 
-        # print(self.format_decimal(self.decimal_broadcast_ip, self.prefix))
-        # print(self.format_binary(self.binary_broadcast_ip))
+        self.binary_broadcast_ip = self.generate_broadcast_ip()
+        self.decimal_broadcast_ip = self.convert_binary_ip_to_decimal(self.binary_broadcast_ip)
+
+        self.binary_web_ip = self.generate_web_ip()
+        self.decimal_web_ip = self.convert_binary_ip_to_decimal(self.binary_web_ip)
+
+        self.number_of_ips = self.generate_number_of_ips()
 
     @property
     def ip(self):
