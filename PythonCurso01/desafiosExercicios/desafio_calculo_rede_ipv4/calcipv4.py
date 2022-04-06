@@ -1,4 +1,7 @@
 class CalcIpv4:
+
+    values = [128, 64, 32, 16, 8, 4, 2, 1]
+
     def __init__(self, ip, mask=None, prefix=None):
         self.ip = ip
         self.mask = mask
@@ -6,9 +9,11 @@ class CalcIpv4:
         
         self.binary_ip = self.convert_ip_to_binary()
         self.binary_mask = self.generate_binary_mask_from_prefix()
-        # print(self.ip)
-        # print(self.binary_ip)
-        # print(self.binary_mask)
+        self.decimal_mask = self.convert_binary_mask_to_decimal()
+        print(self.ip)
+        print(self.binary_ip)
+        print(self.binary_mask)
+        print(self.decimal_mask)
 
     @property
     def ip(self):
@@ -22,11 +27,10 @@ class CalcIpv4:
         self._ip = ip
 
     def convert_ip_to_binary(self):
-        values = [128, 64, 32, 16, 8, 4, 2, 1]
         bin_values = []
         for i in self.ip:
             bin_individual_value = []
-            for j in values:
+            for j in self.values:
                 if i >= j:
                     bin_individual_value.append(1)
                     i = i - j
@@ -49,5 +53,12 @@ class CalcIpv4:
             bin_mask.append(bin_values)
         return bin_mask
                 
-
-
+    def convert_binary_mask_to_decimal(self):
+        decimal_mask = []
+        for i in self.binary_mask:
+            aux = 0
+            for j, k in enumerate(i):
+                if k == 1:
+                    aux += self.values[j]
+            decimal_mask.append(aux)
+        return decimal_mask
