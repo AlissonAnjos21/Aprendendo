@@ -30,6 +30,9 @@ class CalcIpv4:
         # print(self.binary_mask_from_mask)
         # print(self.prefix)
 
+        # print(self.format_decimal(self.decimal_broadcast_ip, self.prefix))
+        # print(self.format_binary(self.binary_broadcast_ip))
+
     @property
     def ip(self):
         return self._ip
@@ -143,3 +146,31 @@ class CalcIpv4:
 
     def generate_number_of_ips(self):
         return (2 ** (32 - self.prefix)) - 2
+
+    @staticmethod
+    def format_binary(ip):
+        formated_ip = ''
+        aux = 0
+        for i in ip:
+            for j in i:
+                j = str(j)
+                formated_ip += j
+            aux+=1
+            if aux < 4:
+                formated_ip += '.'
+        return formated_ip
+    
+    @staticmethod
+    def format_decimal(ip, prefix):
+        formated_ip = ''
+        aux = 0
+        for i in ip:
+            i = str(i)
+            formated_ip += i
+            aux+=1
+            if aux < 4:
+                formated_ip += '.'
+            else:
+                formated_ip += f'/{prefix}'
+
+        return formated_ip
