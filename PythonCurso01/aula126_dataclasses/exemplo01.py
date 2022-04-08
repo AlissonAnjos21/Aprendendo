@@ -1,6 +1,9 @@
 """
 As Dataclasses fornecem um módulo que disponibiliza um decorador e algumas funções para criar alguns métodos automaticamente e de forma mais enxuta/rápida.
 As Dataclasses funcionam exatamente da mesma forma que as classes convencionais.
+
+Adendo importante!!!
+Elas não funcionam muito bem com Herança
 """
 
 from dataclasses import dataclass
