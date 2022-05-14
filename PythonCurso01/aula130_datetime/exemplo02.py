@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Converte uma str para o formato de data
 str_to_date = datetime.strptime('14/05/2022', '%d/%m/%Y')  # Primeiro eu informo a str, depois eu informo em que formato de data ela está
