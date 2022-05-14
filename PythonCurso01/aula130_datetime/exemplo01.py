@@ -8,3 +8,6 @@ print(nova_data)
 data_formatada = nova_data.strftime('%d/%m/%Y %H:%M:%S')  # as "/" e os ":" são opcionais, poderia ter qualquer coisa, ou até não ter nada
 print('\nData Formatada:')
 print(data_formatada)
+
+print('\nHoras, minutos e segundos:')
+print(nova_data.time())  # Ver unicamente as horas, minutos e segundos
