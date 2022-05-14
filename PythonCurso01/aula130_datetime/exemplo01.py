@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 
 nova_data = datetime(2022, 5, 14, 2, 30, 20)  # Formato: ano, mês, dias, horas, minutos, segundos
 print('\nData Padrão:')
