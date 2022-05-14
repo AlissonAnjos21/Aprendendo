@@ -1,4 +1,4 @@
-from datetime import date, datetime, timedelta
+from datetime import datetime
 
 date_1 = datetime.strptime('14/05/2022 21:00:00', '%d/%m/%Y %H:%M:%S')
 date_2 = datetime.strptime('21/05/2022 23:00:00', '%d/%m/%Y %H:%M:%S')
